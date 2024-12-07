@@ -1,0 +1,61 @@
+--- include/configs/nano_rk3568.h	1970-01-01 04:00:00.000000000 +0400
++++ include/configs/nano_rk3568.h	2024-11-08 17:32:13.184687049 +0400
+@@ -0,0 +1,10 @@
++/* SPDX-License-Identifier: GPL-2.0+ */
++
++#ifndef __NANO_RK3568_H
++#define __NANO_RK3568_H
++
++#define ROCKCHIP_DEVICE_SETTINGS
++
++#include <configs/rk3568_common.h>
++
++#endif
+
+
+--- include/configs/dca_rk3566.h	1970-01-01 04:00:00.000000000 +0400
++++ include/configs/dca_rk3566.h	2024-11-02 16:25:41.314050136 +0400
+@@ -0,0 +1,10 @@
++/* SPDX-License-Identifier: GPL-2.0+ */
++
++#ifndef __DCA_RK3566_H
++#define __DCA_RK3566_H
++
++#define ROCKCHIP_DEVICE_SETTINGS
++
++#include <configs/rk3568_common.h>
++
++#endif
+
+--- include/configs/dca_rk3568.h	1970-01-01 04:00:00.000000000 +0400
++++ include/configs/dca_rk3568.h	2024-10-25 10:09:05.246192788 +0400
+@@ -0,0 +1,10 @@
++/* SPDX-License-Identifier: GPL-2.0+ */
++
++#ifndef __DCA_RK3568_H
++#define __DCA_RK3568_H
++
++#define ROCKCHIP_DEVICE_SETTINGS
++
++#include <configs/rk3568_common.h>
++
++#endif
+
+--- include/configs/dca_rk3588.h	1970-01-01 04:00:00.000000000 +0400
++++ include/configs/dca_rk3588.h	2024-10-23 10:51:51.710654099 +0400
+@@ -0,0 +1,15 @@
++/* SPDX-License-Identifier: GPL-2.0+
++ * Copyright 2023 Google, Inc
++ */
++
++#ifndef __DCA_RK3588_H
++#define __DCA_RK3588_H
++
++#define ROCKCHIP_DEVICE_SETTINGS \
++		"stdout=serial,vidconsole\0" \
++		"stderr=serial,vidconsole\0"
++
++#include <configs/rk3588_common.h>
++
++#endif /* __DCA_RK3588_H */
++

@@ -1,0 +1,120 @@
+--- board/arm-sbc/dca_3566/Kconfig	1970-01-01 04:00:00.000000000 +0400
++++ board/arm-sbc/dca_3566/Kconfig	2024-11-02 15:26:05.861303357 +0400
+@@ -0,0 +1,12 @@
++if TARGET_DCA_RK3566
++
++config SYS_BOARD
++	default "dca_rk3566"
++
++config SYS_VENDOR
++	default "arm-sbc"
++
++config SYS_CONFIG_NAME
++	default "dca_rk3566"
++
++endif
+
+--- board/arm-sbc/dca_3566/MAINTAINERS	1970-01-01 04:00:00.000000000 +0400
++++ board/arm-sbc/dca_3566/MAINTAINERS	2024-11-02 15:24:59.504166482 +0400
+@@ -0,0 +1,8 @@
++DCA-RK3566
++M:	Subair Mullappilly  <msubair@hotmail.com>
++S:	Maintained
++F:	board/arm-sbc/dca_rk3566
++F:	include/configs/dca_rk3566.h
++F:	configs/armsbc-dca-rk3566_defconfig
++F:	arch/arm/dts/rk3566-armsbc-dca.dts
++F:	arch/arm/dts/rk3566-armsbc-dca-u-boot.dtsi
+
+--- board/arm-sbc/dca_3568/Kconfig	1970-01-01 04:00:00.000000000 +0400
++++ board/arm-sbc/dca_3568/Kconfig	2024-10-25 09:43:15.750373813 +0400
+@@ -0,0 +1,12 @@
++if TARGET_DCA_RK3568
++
++config SYS_BOARD
++	default "dca_rk3568"
++
++config SYS_VENDOR
++	default "arm-sbc"
++
++config SYS_CONFIG_NAME
++	default "dca_rk3568"
++
++endif
+
+--- board/arm-sbc/dca_3568/MAINTAINERS	1970-01-01 04:00:00.000000000 +0400
++++ board/arm-sbc/dca_3568/MAINTAINERS	2024-10-25 10:06:06.609545611 +0400
+@@ -0,0 +1,8 @@
++DCA-RK3568
++M:	Subair Mullappilly  <msubair@hotmail.com>
++S:	Maintained
++F:	board/arm-sbc/dca_rk3568
++F:	include/configs/dca_rk3568.h
++F:	configs/armsbc-dca-rk3568_defconfig
++F:	arch/arm/dts/rk3568-armsbc-dca.dts
++F:	arch/arm/dts/rk3568-armsbc-dca-u-boot.dtsi
+
+--- board/arm-sbc/dca_3588/Kconfig	1970-01-01 04:00:00.000000000 +0400
++++ u-boot/board/arm-sbc/dca_3588/Kconfig	2024-10-23 10:39:38.901093980 +0400
+@@ -0,0 +1,12 @@
++if TARGET_DCA_RK3588
++
++config SYS_BOARD
++	default "dca_rk3588"
++
++config SYS_VENDOR
++	default "arm-sbc"
++
++config SYS_CONFIG_NAME
++	default "dca_rk3588"
++
++endif
+
+--- board/arm-sbc/dca_3588/MAINTAINERS	1970-01-01 04:00:00.000000000 +0400
++++ u-boot/board/arm-sbc/dca_3588/MAINTAINERS	2024-10-23 11:39:06.981519878 +0400
+@@ -0,0 +1,8 @@
++DCA-RK3588
++M:	Subair Mullappilly  <msubair@hotmail.com>
++S:	Maintained
++F:	board/arm-sbc/dca_rk3588
++F:	include/configs/dca_rk3588.h
++F:	configs/armsbc-dca-rk3588_defconfig
++F:	arch/arm/dts/rk3588-armsbc-dca.dts
++F:	arch/arm/dts/rk3588-armsbc-dca-u-boot.dtsi
+
+--- board/arm-sbc/dca_3588/Makefile	1970-01-01 04:00:00.000000000 +0400
++++ u-boot/board/arm-sbc/dca_3588/Makefile	2024-10-23 10:45:22.114429388 +0400
+@@ -0,0 +1 @@
++obj-y := dca_rk3588.o
+
+--- board/arm-sbc/nano_3568/Kconfig	1970-01-01 04:00:00.000000000 +0400
++++ u-boot/board/arm-sbc/nano_3568/Kconfig	2024-11-08 10:04:42.526686056 +0400
+@@ -0,0 +1,12 @@
++if TARGET_NANO_RK3568
++
++config SYS_BOARD
++	default "nano_rk3568"
++
++config SYS_VENDOR
++	default "nano-sbc"
++
++config SYS_CONFIG_NAME
++	default "nano_rk3568"
++
++endif
+
+--- board/arm-sbc/nano_3568/MAINTAINERS	1970-01-01 04:00:00.000000000 +0400
++++ u-boot/board/arm-sbc/nano_3568/MAINTAINERS	2024-11-08 10:05:26.869955984 +0400
+@@ -0,0 +1,8 @@
++DCA-RK3568
++M:	Subair Mullappilly  <msubair@hotmail.com>
++S:	Maintained
++F:	board/arm-sbc/nano_rk3568
++F:	include/configs/nano_rk3568.h
++F:	configs/armsbc-nano-rk3568_defconfig
++F:	arch/arm/dts/rk3568-armsbc-nano.dts
++F:	arch/arm/dts/rk3568-armsbc-nano-u-boot.dtsi
+
+--- board/aspeed/ibex_ast2700/fmc_hdr.c	2024-12-07 14:19:03.071477103 +0400
++++ board/aspeed/ibex_ast2700/fmc_hdr.c	1970-01-01 04:00:00.000000000 +0400
+
